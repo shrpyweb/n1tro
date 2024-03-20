@@ -12,7 +12,7 @@ jobs:
     - name: Download Ngrok
       run: |
         Invoke-WebRequest https://bin.equinox.io/c/bNyj1mQVY4c/ngrok-v3-stable-windows-amd64.zip
-        Expand-Archive ngrok.zip
+        Expand-Archive ngrok-v3-stable-windows-amd64.zip
         .\ngrok\ngrok.exe update  # Update Ngrok to the latest version
 
     - name: Authenticate Ngrok
